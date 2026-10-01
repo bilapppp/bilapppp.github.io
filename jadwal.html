@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jadwal Operasional</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+
+    background: #e8d9f5;
+}
+        }
+
+        .container {
+            width: 90%;
+            max-width: 650px;
+            margin: auto;
+            padding: 30px 0 40px;
+        }
+
+        /* Logo */
+        .logo {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .logo img {
+            width: 200px;
+            max-width: 60%;
+        }     text-align: center;
+            margin-top: 5px;
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+
+        .navigation a {
+            color: #4b1685;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .navigation span {
+            color: #222;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #999;
+            margin-bottom: 35px;
+        }
+
+        /* Judul */
+        h1 {
+            font-size: 36px;
+            font-weight: normal;
+            margin: 0 0 45px;
+        }
+
+        /* Tabel */
+        table {
+    border-collapse: collapse;
+    width: 310px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    background: rgba(255, 255, 255, 0.65);
+    font-size: 22px;
+}        th,
+        td {
+            border: 1px solid #333;
+            padding: 18px 15px;
+            text-align: left;
+            vertical-align: middle;
+            line-height: 1.8;
+        }
+
+        th {
+            font-weight: normal;
+            background: rgba(245, 245, 245, 0.7);
+        }
+
+        .hari {
+            width: 54%;
+        }
+
+        .jam {
+            width: 46%;
+        }
+
+        .keterangan {
+            font-style: italic;
+            line-height: 1.9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 18px;
+            margin-top: 55px;
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 500px) {
+
+            .container {
+                width: 90%;
+                padding-top: 25px;
+            }
+
+            .logo img {
+                width: 180px;
+            }
+
+            .navigation {
+                font-size: 17px;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 34px;
+                margin-bottom: 40px;
+            }
+
+            table {
+                width: 310px;
+                font-size: 21px;
+            }
+
+            th,
+            td {
+                padding: 15px 14px;
+            }
+
+            footer {
+                font-size: 17px;
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+    </div>
+    <div class="logo-text">
+    </div>
+    <div class="logo-subtitle">
+        
+    </div>
+</div>
+ <!-- LOGO -->
+<div class="logo">
+    <div class="logo-icon">
+        <kdiv style="text-align: center;">
+
+<img src="logonabila.jpg" alt="logonabila.jpg" width ="150">
+    </div>
+
+    <div class="logo-name">
+        KOPI SENJA
+    </div>
+
+    <div class="logo-subtitle">
+        cafe & coffe
+    </div>
+</div>
+ <kdiv style="text-align: center;">
+<img src="logo.png" alt="" width ="150">
+        <!-- NAVIGASI -->
+        <div class="navigation">
+            <a href="index.html">Beranda</a>
+            <span> | </span>
+            <a href="jadwal.html">Jadwal Operasional</a>
+        </div>
+
+        <hr>
+
+        <!-- JUDUL -->
+        <h1>Jam Operasional Kedai</h1>
+
+        <!-- TABEL -->
+        <table>
+
+            <tr>
+                <th class="hari">Hari</th>
+                <th class="jam">Jam<br>Buka</th>
+            </tr>
+
+            <tr>
+                <td>
+                    Senin -<br>
+                    Jumat
+                </td>
+
+                <td>
+                    09.00 -<br>
+                    22.00
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Sabtu -<br>
+                    Minggu
+                </td>
+
+                <td>
+                    10.00 -<br>
+                    24.00
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="keterangan">
+                    Format waktu dalam<br>
+                    WIB
+                </td>
+            </tr>
+
+        </table>
+
+        <!-- FOOTER -->
+        <footer>
+        </footer>
+
+    </div>
+
+</body>
+</html>
