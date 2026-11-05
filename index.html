@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Pribadi | Nabila</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9fc;
+            color: #26354b;
+            line-height: 1.8;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background: #172b4d;
+            padding: 16px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #69b7ff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            color: #69b7ff;
+        }
+
+        /* HOME */
+        header {
+            text-align: center;
+            padding: 75px 20px 85px;
+            background: white;
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #e4efff;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #172b4d;
+            margin-bottom: 8px;
+        }
+
+        header h4 {
+            color: #5685b7;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 500px;
+            margin: auto;
+            color: #718096;
+        }
+
+        .tombol {
+            display: inline-block;
+            margin-top: 22px;
+            background: #245b99;
+            color: white;
+            text-decoration: none;
+            padding: 10px 23px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        /* SECTION */
+        section {
+            max-width: 850px;
+            margin: auto;
+            padding: 60px 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .judul {
+            margin-bottom: 25px;
+        }
+
+        .judul small {
+            color: #397bb8;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .judul h2 {
+            font-size: 27px;
+            color: #172b4d;
+            margin-top: 5px;
+        }
+
+        /* BIODATA */
+        .data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .data div {
+            padding: 12px 0;
+            border-bottom: 1px solid #dce4ed;
+        }
+
+        .data small {
+            color: #397bb8;
+            font-weight: bold;
+        }
+
+        .data p {
+            font-weight: bold;
+        }
+
+        /* PENDIDIKAN DAN ORGANISASI */
+        .riwayat {
+            margin-bottom: 23px;
+            padding-left: 17px;
+            border-left: 3px solid #397bb8;
+        }
+
+        .riwayat small {
+            color: #397bb8;
+            font-weight: bold;
+        }
+
+        .riwayat p {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        /* KEAHLIAN */
+        .keahlian {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .keahlian span {
+            background: #e6effa;
+            color: #245b99;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        /* HOBI */
+        .hobi p {
+            padding: 10px 0;
+            border-bottom: 1px solid #dce4ed;
+        }
+
+        /* PRAKTIKUM */
+        #praktikum {
+            text-align: center;
+        }
+
+        #praktikum p {
+            color: #718096;
+            margin: 12px 0 22px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #172b4d;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 13px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .data {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <div class="logo">NABILA<span></span></div>
+
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#biodata">BIODATA</a></li>
+            <li><a href="#pendidikan">PENDIDIKAN</a></li>
+            <li><a href="#organisasi">ORGANISASI</a></li>
+            <li><a href="#keahlian">KEAHLIAN</a></li>
+            <li><a href="#hobi">HOBI</a></li>
+            <li><a href="#praktikum">PRAKTIKUM</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <header id="home">
+
+        <img src="nana.jpg"
+             alt="Foto Profil Nabila"
+             class="foto">
+
+        <h1>Halo, Saya Nabila</h1>
+
+        <h4>Pelajar </h4>
+
+        <p>
+            Selamat datang di website pribadi saya.
+            Saya senang belajar hal baru, menambah pengalaman,
+            dan mengembangkan kemampuan untuk masa depan.
+        </p>
+
+        <a href="#biodata" class="tombol">
+            Lihat Profil
+        </a>
+
+    </header>
+
+    <!-- BIODATA -->
+    <section id="biodata">
+
+        <div class="judul">
+            <small>01 / TENTANG SAYA</small>
+            <h2>Biodata Pribadi</h2>
+        </div>
+
+        <div class="data">
+
+            <div>
+                <small>NAMA LENGKAP</small>
+                <p>NABILA</p>
+            </div>
+
+            <div>
+                <small>Tempat, Tanggal Lahir</small>
+                <p>Cirebon, 10 Maret 2010 </p>
+            </div>
+
+            <div>
+                <small>ALAMAT</small>
+                <p>Cirebon, Jawa Barat</p>
+            </div>
+
+            <div>
+                <small>EMAIL</small>
+                <p>bbilap03@gmail.com</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="pendidikan">
+
+        <div class="judul">
+            <small>02 / EDUCATION</small>
+            <h2>Riwayat Pendidikan</h2>
+        </div>
+
+        <div class="riwayat">
+            <small>TAHUN - SEKARANG</small>
+            <h3>SMKN 1 LEUWIMUNDING</h3>
+            <p>TEKNIK JARINGAN KOMPUTER</p>
+        </div>
+
+        <div class="riwayat">
+            <small>SMP</small>
+            <h3>SMPN 1 GEMPOL</h3>
+            <p></p>
+        </div>
+
+        <div class="riwayat">
+            <small>SD</small>
+            <h3>SDN 3 KEDUNG BUNDER</h3></h3>
+            <p></p>
+        </div>
+
+    </section>
+
+    <!-- ORGANISASI -->
+    <section id="organisasi">
+
+        <div class="judul">
+            <small>03 / EXPERIENCE</small>
+            <h2>Pengalaman Organisasi</h2>
+        </div>
+
+        <div class="riwayat">
+            <small></small>
+            <h3>PMR</h3>
+            <p></p>
+        </div>
+
+        <div class="riwayat">
+            <small></small></small>
+            <h3>SILAT</h3>
+            <p></p>
+        </div>
+
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian">
+
+        <div class="judul">
+            <small>04 / MY SKILLS</small>
+            <h2>Keahlian</h2>
+        </div>
+
+        <div class="keahlian">
+            <span>Microsoft Office</span>
+            <span>Praktik Jaringan</span>
+            <span>Desain</span>
+            <span>Presentasi</span>
+            <span>Web Programming</span>
+        </div>
+
+    </section>
+
+    <!-- HOBI -->
+    <section id="hobi">
+
+        <div class="judul">
+            <small>05 / MY HOBBIES</small>
+            <h2>HOBI</h2>
+        </div>
+
+        <div class="hobi">
+            <p>🎼Bernyanyi </p>
+            <p>🎵 Mendengarkan Musik</p>
+            <p>✈️ Travelling</p>
+        </div>
+
+    </section>
+
+    <!-- PRAKTIKUM -->
+    <section id="praktikum">
+
+        <div class="judul">
+            <small>06 / MY ACTIVITIES</small>
+            <h2>Repository Praktikum</h2>
+        </div>
+
+        <p>
+            Untuk melihat tugas dan kegiatan praktikum,
+            silakan kunjungi repository saya.
+        </p>
+
+        <a href="https://bilapppp.github.io/praktikum/"
+           target="_blank"
+           class="tombol">
+            Kunjungi Repository Praktikum →
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Nabila | Personal Portfolio</p>
+        <p></p>
+    </footer>
+
+</body>
+</html>
+ 
